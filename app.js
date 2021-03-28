@@ -309,7 +309,7 @@ logo.WhiteElement.addEventListener('mouseup', async (e) => {
 
     await resolveAfter200Seconds(transformWhite.changeScale(),
         transformBlack.changeScale());
-    await resolveAfter0Seconds(window.location = "D:/Web_Dev/Mofa_16032021/index.html");
+    await resolveAfter0Seconds(window.location = "https://rakshitrajender.github.io/Mofa_16032021.github.io/");
 
 })
 
@@ -365,12 +365,12 @@ contentText.project.addEventListener('click', () => {
 })
 
 contentText.practice.addEventListener('click', (e) => {
-    window.location = "D:/Web_Dev/Mofa_16032021/2_Practice/Practice_index.html";
+    window.location = "https://rakshitrajender.github.io/Mofa_16032021_2_Practice.github.io/";
     console.log(e);
 })
 
 contentText.team.addEventListener('click', () => {
-    window.location = "D:/Web_Dev/Mofa_16032021/3_Team/Team_index.html";
+    window.location = "https://rakshitrajender.github.io/Mofa_16032021_3_Team.github.io/";
 })
 
 // contentText.services.addEventListener('click', () => {
@@ -378,7 +378,7 @@ contentText.team.addEventListener('click', () => {
 // })
 
 contentText.contact.addEventListener('click', () => {
-    window.location = "D:/Web_Dev/Mofa_16032021/5_Contact/Contact_index.html";
+    window.location = "https://rakshitrajender.github.io/Mofa_16032021_5_Contact.github.io/";
 })
 
 
