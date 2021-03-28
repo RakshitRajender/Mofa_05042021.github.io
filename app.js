@@ -309,7 +309,7 @@ logo.WhiteElement.addEventListener('mouseup', async (e) => {
 
     await resolveAfter200Seconds(transformWhite.changeScale(),
         transformBlack.changeScale());
-    await resolveAfter0Seconds(window.location = "https://rakshitrajender.github.io/Mofa_16032021.github.io/");
+    await resolveAfter0Seconds(window.location = "index.html");
 
 })
 
