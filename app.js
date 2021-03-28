@@ -358,10 +358,10 @@ contentText.contact.addEventListener('mouseleave', () => {
     contentText.contact.style.color = "black"
 })
 
-https://<user.name>.github.io/<repo.name>/about.html
+
 
 contentText.project.addEventListener('click', () => {
-    window.location = "/Mofa_16032021.github.io/1_Project/Project_index.html";
+    window.location = "https://rakshitrajender.github.io/Mofa_16032021_1_Project.github.io/";
 })
 
 contentText.practice.addEventListener('click', (e) => {
