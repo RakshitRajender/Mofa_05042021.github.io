@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+html {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 0.4vw;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: #f3f3f3;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: rgb(44, 44, 44);
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(71, 71, 71);
+}
+
+body {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    background-color: rgb(0, 0, 0);
+    /* position: fixed; */
+}
+
+nav {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 6vh;
+    /* margin-top: 1em; */
+    border-bottom: 0.5mm solid rgb(29, 29, 29);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: fixed;
+    z-index: 99;
+}
+
+.logoDiv {
+    background-color: rgba(204, 29, 29, 0);
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.logo {
+    height: 66.5%;
+    /* transform: translate(0, -0.45em); */
+    margin-left: 2.6%;
+    margin-bottom: 0.45%;
+}
+
+#blackLogo {
+    position: absolute;
+    z-index: 5;
+    transition: all 0.15s cubic-bezier(0.45, 0, 0.55, 1);
+}
+
+#whiteLogo {
+    position: absolute;
+    z-index: 99;
+    opacity: 0;
+    cursor: pointer;
+    transition: all 0.15s cubic-bezier(0.45, 0, 0.55, 1);
+}
+
+.actualContent {
+    width: 80%;
+    height: 70%;
+    transform: translate(0%) rotate(180deg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+    opacity: 0;
+    transition: all 1s cubic-bezier(0.45, 0, 0.55, 1);
+}
+
+.projects, .practice, .team, .services, .contact {
+    transition: all 0.1s cubic-bezier(0.45, 0, 0.55, 1);
+    cursor: pointer;
+    /* z-index: 86; */
+}
+
+.team {
+    font-weight: 600;
+}
+
+.contentTable {
+    width: 4%;
+    height: 80%;
+    transform: translate(20%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content {
+    background-color: rgba(245, 27, 27, 0);
+    width: 3.2vh;
+    height: 3.2vh;
+    border: 0.7mm solid rgb(29, 29, 29);
+    transform: rotate(-180deg);
+    transition: all .5s cubic-bezier(0.45, 0, 0.55, 1);
+    transform-origin: center left;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.teamTable {
+    width: 80%;
+    height: 80%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.row1 {
+    width: 100%;
+    height: 35vh;
+    background-color: aquamarine;
+    background: linear-gradient(rgba(255, 255, 255, 0.212), rgba(255, 255, 255, 0.151)), url("D:/Web_Dev/Mofa_16032021/3_Team/Faisal_Image.jpg");
+    background-position: 25vh;
+    background-size: 55vh;
+}
+
+.row2{
+    width: 100%;
+    height: 35vh;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Bhanu{
+    background-color: rgb(176, 127, 255);
+    width: 100%;
+    height: 35vh;
+}
+
+.Placeholder{
+    background-color: rgb(55, 16, 119);
+    width: 100%;
+    height: 35vh;
+}
