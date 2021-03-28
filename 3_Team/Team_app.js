@@ -270,7 +270,7 @@ logo.WhiteElement.addEventListener('mouseup', async (e) => {
 
     await resolveAfter200Seconds(transformWhite.changeScale(),
         transformBlack.changeScale());
-    await resolveAfter0Seconds(window.location = "D:/Web_Dev/Mofa_16032021/index.html");
+    await resolveAfter0Seconds(window.location = "https://rakshitrajender.github.io/Mofa_16032021.github.io/index.html");
 
 })
 
@@ -322,16 +322,16 @@ contentText.contact.addEventListener('mouseleave', () => {
 
 
 contentText.project.addEventListener('click', () => {
-    window.location = "D:/Web_Dev/Mofa_16032021/1_Project/Project_index.html";
+    window.location = "https://rakshitrajender.github.io/Mofa_16032021.github.io/1_Project/Project_index.html";
 })
 
 contentText.practice.addEventListener('click', (e) => {
-    window.location = "D:/Web_Dev/Mofa_16032021/2_Practice/Practice_index.html";
+    window.location = "https://rakshitrajender.github.io/Mofa_16032021.github.io/2_Practice/Practice_index.html";
     console.log(e);
 })
 
 contentText.team.addEventListener('click', () => {
-    window.location = "D:/Web_Dev/Mofa_16032021/3_Team/Team_index.html";
+    window.location ="https://rakshitrajender.github.io/Mofa_16032021.github.io/3_Team/Team_index.html";
 })
 
 // contentText.services.addEventListener('click', () => {
@@ -339,5 +339,5 @@ contentText.team.addEventListener('click', () => {
 // })
 
 contentText.contact.addEventListener('click', () => {
-    window.location = "D:/Web_Dev/Mofa_16032021/5_Contact/Contact_index.html";
+    window.location = "https://rakshitrajender.github.io/Mofa_16032021.github.io/5_Contact/Contact_index.html";
 })
