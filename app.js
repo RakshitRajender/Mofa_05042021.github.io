@@ -365,12 +365,12 @@ contentText.project.addEventListener('click', () => {
 })
 
 contentText.practice.addEventListener('click', (e) => {
-    window.location = "https://rakshitrajender.github.io/Mofa_16032021_2_Practice.github.io/";
+    window.location = "2_Practce/Practice_index.html";
     console.log(e);
 })
 
 contentText.team.addEventListener('click', () => {
-    window.location = "https://rakshitrajender.github.io/Mofa_16032021_3_Team.github.io/";
+    window.location = "3_Team/Team_index.html";
 })
 
 // contentText.services.addEventListener('click', () => {
@@ -378,7 +378,7 @@ contentText.team.addEventListener('click', () => {
 // })
 
 contentText.contact.addEventListener('click', () => {
-    window.location = "https://rakshitrajender.github.io/Mofa_16032021_5_Contact.github.io/";
+    window.location = "5_Contact/Contact_index.html";
 })
 
 
