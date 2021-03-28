@@ -361,7 +361,7 @@ contentText.contact.addEventListener('mouseleave', () => {
 
 
 contentText.project.addEventListener('click', () => {
-    window.location = "https://rakshitrajender.github.io/Mofa_16032021_1_Project.github.io/";
+    window.location = "1_Project/Project_index.html";
 })
 
 contentText.practice.addEventListener('click', (e) => {
