@@ -361,7 +361,7 @@ contentText.contact.addEventListener('mouseleave', () => {
 https://<user.name>.github.io/<repo.name>/about.html
 
 contentText.project.addEventListener('click', () => {
-    window.location = "https://github.com/RakshitRajender/RakshitRajender.github.io/blob/a4583ecfef022bd982ff881ba9ae1d8077b4de58/1_Project/Project_index.html";
+    window.location = "/1_Project/Project_index.html";
 })
 
 contentText.practice.addEventListener('click', (e) => {
