@@ -32,9 +32,6 @@ const contentTextRevert = {
     opacity: "0"
 }
 
-const aContent = {
-    element: document.querySelector(".actualContent")
-}
 
 
 const logo = {
