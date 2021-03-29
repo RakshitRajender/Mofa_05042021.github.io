@@ -84,7 +84,7 @@ nav {
     justify-content: space-between;
     align-items: flex-end;
     position: fixed;
-    z-index: 99;
+    z-index: 90;
 }
 
 .logoDiv {
@@ -112,7 +112,7 @@ nav {
 
 #whiteLogo {
     position: absolute;
-    z-index: 55;
+    z-index: 91;
     opacity: 0;
     cursor: pointer;
     transition: all 0.15s cubic-bezier(0.45, 0, 0.55, 1);
