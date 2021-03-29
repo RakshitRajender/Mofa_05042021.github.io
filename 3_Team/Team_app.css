@@ -53,6 +53,7 @@ body {
 
 .loadingBg{
     position: absolute;
+    z-index: 98;
     width: 100vw;
     height:100vh;
     background-color: rgb(32, 32, 32);
@@ -111,7 +112,7 @@ nav {
 
 #whiteLogo {
     position: absolute;
-    z-index: 99;
+    z-index: 55;
     opacity: 0;
     cursor: pointer;
     transition: all 0.15s cubic-bezier(0.45, 0, 0.55, 1);
