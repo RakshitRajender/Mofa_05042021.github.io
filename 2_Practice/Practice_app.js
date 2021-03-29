@@ -371,14 +371,16 @@ contentText.contact.addEventListener('click', () => {
     window.location = "https://rakshitrajender.github.io/Mofa_16032021.github.io/5_Contact/Contact_index.html";
 })
 
-window.addEventListener('load', async () => {
+async function FirstFewLines()  {
     await resolveAfter400Seconds();
     await resolveAfter1600Seconds(document.querySelector("#line2").style.borderTop = "0.4mm solid rgb(240, 240, 240)");
     await resolveAfter2000Seconds(document.querySelector(".AtMofa").style.opacity = "1")
     await resolveAfter4000Seconds(document.querySelector(".WeBelieve").style.opacity = "1")
     await resolveAfter4000Seconds(document.querySelector(".ForOur").style.opacity = "1")
     await resolveAfter0Seconds(scroll());
-})
+}
+ 
+FirstFewLines();
 
 async function scroll() {
     await resolveAfter400Seconds(window.scrollTo({ top: 900, behavior: 'smooth' }));
