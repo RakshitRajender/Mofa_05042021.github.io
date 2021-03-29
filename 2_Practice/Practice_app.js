@@ -434,7 +434,7 @@ document.querySelector("#Proj").addEventListener('mouseleave', () => {
 
 document.querySelector("#Proj").addEventListener('mouseup', async () => {
     await resolveAfter400Seconds(document.querySelector("#Proj").style.transform = "scale(1)");
-    await resolveAfter0Seconds(window.location = "D:/Web_Dev/Mofa_16032021/1_Project/Project_index.html");
+    await resolveAfter0Seconds(window.location = "https://rakshitrajender.github.io/Mofa_16032021.github.io/1_Project/Project_index.html");
 })
 
 document.querySelector("#Proj").addEventListener('mousedown', () => {
@@ -454,7 +454,7 @@ document.querySelector("#Team").addEventListener('mouseleave', () => {
 
 document.querySelector("#Team").addEventListener('mouseup', async () => {
     await resolveAfter400Seconds(document.querySelector("#Team").style.transform = "scale(1)");
-    await resolveAfter0Seconds(window.location = "D:/Web_Dev/Mofa_16032021/3_Team/Team_index.html");
+    await resolveAfter0Seconds(window.location = "https://rakshitrajender.github.io/Mofa_16032021.github.io/3_Team/Team_index.html");
 })
 
 document.querySelector("#Team").addEventListener('mousedown', () => {
@@ -473,7 +473,7 @@ document.querySelector("#Cont").addEventListener('mouseleave', () => {
 
 document.querySelector("#Cont").addEventListener('mouseup', async () => {
     await resolveAfter400Seconds(document.querySelector("#Cont").style.transform = "scale(1)");
-    await resolveAfter0Seconds(window.location = "D:/Web_Dev/Mofa_16032021/5_Contact/Contact_index.html");
+    await resolveAfter0Seconds(window.location = "https://rakshitrajender.github.io/Mofa_16032021.github.io/5_Contact/Contact_index.html");
 })
 
 document.querySelector("#Cont").addEventListener('mousedown', () => {
