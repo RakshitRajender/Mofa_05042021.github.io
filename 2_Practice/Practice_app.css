@@ -48,6 +48,35 @@ body {
     /* position: fixed; */
 }
 
+.loading{
+    position: absolute;
+    z-index: 99;
+    width: 100vw;
+    height:100vh;
+}
+
+.loadingBg{
+    position: absolute;
+    width: 100vw;
+    height:100vh;
+    background-color: rgba(0, 0, 0, 0.788);
+}
+
+.loadingLogo{
+    /* position: absolute; */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoGrad{
+    position: absolute;
+    width: 15vw;
+   
+}
+
 nav {
     background-color: rgb(255, 255, 255);
     width: 100%;

@@ -1,3 +1,6 @@
+window.addEventListener('load', (e)=>{
+
+
 const contentBox = {
     element: document.querySelector(".content"),
     borderWidth: "0.5mm",
@@ -340,4 +343,6 @@ contentText.team.addEventListener('click', () => {
 
 contentText.contact.addEventListener('click', () => {
     window.location = "https://rakshitrajender.github.io/Mofa_16032021.github.io/5_Contact/Contact_index.html";
+})
+
 })

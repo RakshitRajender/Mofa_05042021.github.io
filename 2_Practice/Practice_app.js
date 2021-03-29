@@ -1,3 +1,5 @@
+window.addEventListener('load', ()=>{
+
 const contentBox = {
     element: document.querySelector(".content"),
     borderWidth: "0.5mm",
@@ -478,4 +480,6 @@ document.querySelector("#Cont").addEventListener('mouseup', async () => {
 
 document.querySelector("#Cont").addEventListener('mousedown', () => {
     document.querySelector("#Cont").style.transform = "scale(0.9)"
+})
+
 })
