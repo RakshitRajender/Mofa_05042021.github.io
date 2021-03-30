@@ -53,7 +53,7 @@ body {
 
 .loadingBg{
     position: absolute;
-    /* z-index: 95; */
+    z-index: 98;
     width: 100vw;
     height:100vh;
     background-color: rgb(32, 32, 32);
@@ -84,7 +84,7 @@ nav {
     justify-content: space-between;
     align-items: flex-end;
     position: fixed;
-    z-index: 90;
+    z-index: 99;
 }
 
 .logoDiv {
