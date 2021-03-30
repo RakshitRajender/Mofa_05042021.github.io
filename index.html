@@ -18,11 +18,12 @@
 </head>
 
 <body>
-    
+
     <div class="loading">
         <div class="loadingBg"></div>
         <div class="loadingLogo">
-            <svg class="logoGrad" stroke="white" stroke-width="1.5" fill="none" version="1.1" id="Collapsed_copy_2__x2B__Layer_3_xA0_Image_1_" xmlns="http://www.w3.org/2000/svg"
+            <svg class="logoGrad" stroke="white" stroke-width="1.5" fill="none" version="1.1"
+                id="Collapsed_copy_2__x2B__Layer_3_xA0_Image_1_" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="425px" height="166px"
                 viewBox="0 0 425 166" enable-background="new 0 0 425 166" xml:space="preserve">
                 <path fill-rule="evenodd" clip-rule="evenodd" fill="#F1F1F1"
@@ -63,77 +64,90 @@
     </div>
 
     <div class=" gradient">
+    </div>
+    <div class="carousalStart">
+        <div class="carousal">
+            <img class="One" src="1.jpg" alt="">
+            <img class="Three" src="1.jpg" alt="">
         </div>
-        <div class="carousalStart">
-            <div class="carousal">
-                <img class="One" src="1.jpg" alt="">
-                <img class="Three" src="1.jpg" alt="">
-            </div>
+    </div>
+
+
+    <nav>
+
+        <div class="logoDiv">
+            <img src="Logo_New_16032021.png" alt="" class="logo" id="blackLogo">
+            <img src="Logo_New_White_16032021.png" alt="" class="logo" id="whiteLogo">
         </div>
 
 
-        <nav>
+        <div class="contentTable">
+            <div class="content">
+                <div class="actualContent">
+                    <span class="practice">Practice</span>
+                    <span class="projects">Projects</span>
 
-            <div class="logoDiv">
-                <img src="Logo_New_16032021.png" alt="" class="logo" id="blackLogo">
-                <img src="Logo_New_White_16032021.png" alt="" class="logo" id="whiteLogo">
-            </div>
-
-
-            <div class="contentTable">
-                <div class="content">
-                    <div class="actualContent">
-                        <span class="practice">Practice</span>
-                        <span class="projects">Projects</span>
-
-                        <span class="team">Team</span>
-                        <!-- <span class="services">Services</span> -->
-                        <span class="contact">Contact</span>
-                    </div>
+                    <span class="team">Team</span>
+                    <!-- <span class="services">Services</span> -->
+                    <span class="contact">Contact</span>
                 </div>
             </div>
+        </div>
 
-        </nav>
+    </nav>
 
-        <main>
-            <div class="arrows">
-                <div class="arrowContentLeft"></div>
-                <div class="arrowContentRight"></div>
+    <main>
+        <div class="arrows">
+            <div class="arrowContentLeft"></div>
+            <div class="arrowContentRight"></div>
+        </div>
+
+        <div class="footer">
+            <div class="description">
+                <div class="textTag">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.</div>
+                <div class="textTag1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna</div>
+                <div class="textTag2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore</div>
+                <div class="textTag3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et</div>
             </div>
 
-            <div class="footer">
-                <div class="description">
-                    <div class="textTag">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua.</div>
-                    <div class="textTag1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna</div>
-                    <div class="textTag2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore</div>
-                    <div class="textTag3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et</div>
-                </div>
-
-                <div class="imageChange">
-                    <div class="imageChangeSpace">
-                        <div class="imgOne"></div>
-                        <div class="imgTwo"></div>
-                        <div class="imgThree"></div>
-                        <div class="imgFour"></div>
-                    </div>
+            <div class="imageChange">
+                <div class="imageChangeSpace">
+                    <div class="imgOne"></div>
+                    <div class="imgTwo"></div>
+                    <div class="imgThree"></div>
+                    <div class="imgFour"></div>
                 </div>
             </div>
-        </main>
+        </div>
+    </main>
 
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script>
+        const logo = document.querySelector(".logoGrad");
 
-        <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>  
-        <script>  
+        anime({
+            targets: logo,
+            strokeDashoffset: [anime.setDashoffset, 0],
+            easing: 'easeInOutSine',
+            duration: 1000,
+            delay: 300,
+            direction: 'alternate',
+            loop: true
+        });
+    </script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
 
-            $(window).on('load', function () {  
-                $(".loading").fadeOut("slow");  
-           });  
-         </script>
-        <script src="app.js"></script>
+        $(window).on('load', function () {
+            $(".loading").fadeOut("slow");
+        });
+    </script>
+    <script src="app.js"></script>
 </body>
 
 </html>
