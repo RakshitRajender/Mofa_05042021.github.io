@@ -125,28 +125,67 @@
         </div>
     </main>
 
-
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <script>
         const logoPath = document.querySelector(".logoPath");
+        let loopBegan = 0;
+        let loopCompleted = 0;
 
-        anime({
-            targets: logoPath,
-            strokeDashoffset: [anime.setDashoffset, 0],
-            easing: 'easeInOutSine',
-            duration: 1500,
-            delay: -700,
-            direction: 'alternate',
-            loop: true
-        });
-    </script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script>
+        function resolveAfter0Seconds(x, y) {
+            return new Promise(resolve => {
+                setTimeout(() => {
+                    resolve(x, y);
+                }, 0);
+            });
+        }
 
-        $(window).on('load', function () {
-            $(".loading").fadeOut("slow");
-        });
+        function resolveAfter6000Seconds(x, y) {
+            return new Promise(resolve => {
+                setTimeout(() => {
+                    resolve(x, y);
+                }, 6000);
+            });
+        }
+
+
+        async function intro() {
+
+            await resolveAfter6000Seconds(anime({
+                targets: logoPath,
+                strokeDashoffset: [anime.setDashoffset, 0],
+                easing: 'easeInOutSine',
+                duration: 1500,
+                delay: 100,
+                direction: 'alternate',
+                loop: 4
+                // ,
+                // loopComplete: function (anim) {
+                //     loopCompleted++;
+
+                //     // console.log(loopCompleted)
+                //     if (loopCompleted == 4) {
+                //         $(window).on('load', function () {
+                //             $(".loading").fadeOut("slow");
+                //         });
+                //     }
+
+                //     else {
+
+                //         console.log(loopCompleted)
+                //     }
+                // }
+            }))
+
+
+            await resolveAfter0Seconds($(".loading").fadeOut("slow"));
+
+        }
+        intro();
+
     </script>
+
+
     <script src="app.js"></script>
 </body>
 
