@@ -349,7 +349,7 @@ main {
 .layerTop2{
     position:absolute;
     z-index:80;
-    transform:translate(0,-452%);
+    transform:translate(0,-802%);
     width: 45%;
     height: 33%;
     background-color: rgb(240 248 255 / 54%);
@@ -367,7 +367,25 @@ main {
 .layerTop3{
     position:absolute;
     z-index:80;
-    transform:translate(0,-452%);
+    transform:translate(0,-152%);
+    width: 9%;
+    height: 30%;
+    background-color: rgb(240 248 255 / 54%);
+}
+
+.layerTop4{
+    position:absolute;
+    z-index:80;
+    transform:translate(0,-152%);
+    width: 9%;
+    height: 30%;
+    background-color: rgb(240 248 255 / 54%);
+}
+
+.layerTop5{
+    position:absolute;
+    z-index:80;
+    transform:translate(0,-152%);
     width: 9%;
     height: 30%;
     background-color: rgb(240 248 255 / 54%);
