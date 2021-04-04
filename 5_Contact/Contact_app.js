@@ -234,13 +234,13 @@ function resolveAfter10000Seconds(x, y, z) {
 
 async function animateNav(e) {
 
-    await resolveAfter0Seconds(contentBox.element.removeEventListener('mouseenter', animateNav));
+    await resolveAfter0Seconds(contentBox.element.removeEventListener('click', animateNav));
     await resolveAfter400Seconds(changeB.changeB(), changeW.changeHeight());
     await resolveAfter6500Seconds(changeW.changeWidth(), changeO.changeOpacity());
     await resolveAfter800Seconds(revertO.changeOpacity());
     await resolveAfter400Seconds(revertW.changeWidth());
     await resolveAfter400Seconds(revertB.changeB(), revertW.changeHeight());
-    await resolveAfter0Seconds(contentBox.element.addEventListener('mouseenter', animateNav));
+    await resolveAfter0Seconds(contentBox.element.addEventListener('click', animateNav));
     console.log(e.type);
     // e.preventDefault();
     // e.stopPropagation();
@@ -279,7 +279,7 @@ logo.WhiteElement.addEventListener('mouseup', async (e) => {
 
 
 
-contentBox.element.addEventListener('mouseenter', animateNav)
+contentBox.element.addEventListener('click', animateNav)
 
 
 contentText.project.addEventListener('mouseenter', () => {
