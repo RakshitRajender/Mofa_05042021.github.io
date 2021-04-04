@@ -350,7 +350,7 @@ main {
     position:absolute;
     z-index:80;
     transform:translate(0,-452%);
-    width: 90%;
+    width: 45%;
     height: 33%;
     background-color: rgb(240 248 255 / 54%);
 }
@@ -364,11 +364,11 @@ main {
     transform:translate(-18%,-15%);
 }
 
-.layerTop2{
+.layerTop3{
     position:absolute;
     z-index:80;
     transform:translate(0,-452%);
-    width: 90%;
+    width: 9%;
     height: 30%;
     background-color: rgb(240 248 255 / 54%);
 }
