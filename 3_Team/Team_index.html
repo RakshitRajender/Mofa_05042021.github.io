@@ -244,14 +244,13 @@
             }))
 
 
-            await resolveAfter0Seconds(window.addEventListener('load', ()=>{(".loading").fadeOut(1500)
-            document.querySelector("html").style.overflowY = "scroll"}));
+            await resolveAfter0Seconds($(window).on('load', function () { $(".loading").fadeOut(1500);
+            document.querySelector("html").style.overflowY = "scroll";}));
         }
-
         intro();
 
     </script>
     <script src="Team_app.js"></script>
 </body>
 
-</html>
+</html>F
