@@ -1,402 +1,533 @@
-window.addEventListener('load', (e)=>{
+window.addEventListener('load', (e) => {
 
 
-const contentBox = {
-    element: document.querySelector(".content"),
-    borderWidth: "0.5mm",
-    borderStyle: "solid",
-    borderColor: "black",
-    width: "1220%",
-    height: "4vh"
-}
-
-const contentText = {
-    element: document.querySelector(".actualContent"),
-    opacity: "1",
-    project: document.querySelector(".projects"),
-    practice: document.querySelector(".practice"),
-    team: document.querySelector(".team"),
-    services: document.querySelector(".services"),
-    contact: document.querySelector(".contact")
-}
-
-const contentBoxRevert = {
-    borderWidth: "0.7mm",
-    borderStyle: "solid",
-    borderColor: "black",
-    width: "3.2vh",
-    height: "3.2vh"
-}
-
-const contentTextRevert = {
-    opacity: "0"
-}
-
-const aContent = {
-    element: document.querySelector(".actualContent")
-}
-
-
-const logo = {
-    WhiteElement: document.querySelector("#whiteLogo"),
-    BlackElement: document.querySelector("#blackLogo"),
-    opacity: "1",
-    opacityRevert: "0"
-}
-
-
-class Border {
-    constructor(width, style, color, element) {
-        this.width = width;
-        this.style = style;
-        this.color = color;
-        this.element = element;
+    const contentBox = {
+        element: document.querySelector(".content"),
+        borderWidth: "0.5mm",
+        borderStyle: "solid",
+        borderColor: "black",
+        width: "1220%",
+        height: "4vh"
     }
 
-    changeB() {
-        return this.element.style.border = `${this.width} ${this.style} ${this.color}`;
+    const contentText = {
+        element: document.querySelector(".actualContent"),
+        opacity: "1",
+        project: document.querySelector(".projects"),
+        practice: document.querySelector(".practice"),
+        team: document.querySelector(".team"),
+        services: document.querySelector(".services"),
+        contact: document.querySelector(".contact")
     }
 
-    changeBRight() {
-        return this.element.style.borderRight = `${this.width} ${this.style} ${this.color}`;
+    const contentBoxRevert = {
+        borderWidth: "0.7mm",
+        borderStyle: "solid",
+        borderColor: "black",
+        width: "3.2vh",
+        height: "3.2vh"
     }
 
-    changeBLeft() {
-        return this.element.style.borderLeft = `${this.width} ${this.style} ${this.color}`;
+    const contentTextRevert = {
+        opacity: "0"
     }
 
-    changeBTop() {
-        return this.element.style.borderTop = `${this.width} ${this.style} ${this.color}`;
+    const aContent = {
+        element: document.querySelector(".actualContent")
     }
 
-    changeBBottom() {
-        return this.element.style.borderBottom = `${this.width} ${this.style} ${this.color}`;
-    }
-}
 
-class WidthHeight {
-    constructor(width, height, element) {
-        this.element = element;
-        this.width = width;
-        this.height = height;
+    const logo = {
+        WhiteElement: document.querySelector("#whiteLogo"),
+        BlackElement: document.querySelector("#blackLogo"),
+        opacity: "1",
+        opacityRevert: "0"
     }
 
-    changeWidth() {
-        return this.element.style.width = `${this.width}`;
+
+    class Border {
+        constructor(width, style, color, element) {
+            this.width = width;
+            this.style = style;
+            this.color = color;
+            this.element = element;
+        }
+
+        changeB() {
+            return this.element.style.border = `${this.width} ${this.style} ${this.color}`;
+        }
+
+        changeBRight() {
+            return this.element.style.borderRight = `${this.width} ${this.style} ${this.color}`;
+        }
+
+        changeBLeft() {
+            return this.element.style.borderLeft = `${this.width} ${this.style} ${this.color}`;
+        }
+
+        changeBTop() {
+            return this.element.style.borderTop = `${this.width} ${this.style} ${this.color}`;
+        }
+
+        changeBBottom() {
+            return this.element.style.borderBottom = `${this.width} ${this.style} ${this.color}`;
+        }
     }
 
-    changeHeight() {
-        return this.element.style.height = `${this.height}`;
-    }
-}
+    class WidthHeight {
+        constructor(width, height, element) {
+            this.element = element;
+            this.width = width;
+            this.height = height;
+        }
 
-class Opacity {
-    constructor(opacity, element) {
-        this.opacity = opacity;
-        this.element = element;
+        changeWidth() {
+            return this.element.style.width = `${this.width}`;
+        }
 
-    }
-
-    changeOpacity() {
-        return this.element.style.opacity = `${this.opacity}`
-    }
-
-    changeBackgroundOpacity() {
-        return this.element.style.backgroundColor = `${this.opacity}`
-    }
-}
-
-class Transform {
-    constructor(scaleX, scaleY, rotate, element) {
-        this.scaleX = scaleX;
-        this.scaleY = scaleY;
-        this.rotate = rotate
-        this.element = element;
-
+        changeHeight() {
+            return this.element.style.height = `${this.height}`;
+        }
     }
 
-    changeScale() {
-        return this.element.style.transform = `scale(${this.scaleX},${this.scaleY}) rotate(${this.rotate}deg)`
-    }
-}
+    class Opacity {
+        constructor(opacity, element) {
+            this.opacity = opacity;
+            this.element = element;
 
-class FontColor {
-    constructor(r, g, b, color, element) {
-        this.r = r;
-        this.g = g;
-        this.b = b;
-        this.color = color;
-        this.element = element;
-    }
+        }
 
-    changeBlack() {
-        this.element.style.color = "black";
+        changeOpacity() {
+            return this.element.style.opacity = `${this.opacity}`
+        }
+
+        changeBackgroundOpacity() {
+            return this.element.style.backgroundColor = `${this.opacity}`
+        }
     }
 
-    changeWhite() {
-        this.element.style.color = "white";
+    class Transform {
+        constructor(scaleX, scaleY, rotate, element) {
+            this.scaleX = scaleX;
+            this.scaleY = scaleY;
+            this.rotate = rotate
+            this.element = element;
+
+        }
+
+        changeScale() {
+            return this.element.style.transform = `scale(${this.scaleX},${this.scaleY}) rotate(${this.rotate}deg)`
+        }
     }
-}
+
+    class FontColor {
+        constructor(r, g, b, color, element) {
+            this.r = r;
+            this.g = g;
+            this.b = b;
+            this.color = color;
+            this.element = element;
+        }
+
+        changeBlack() {
+            this.element.style.color = "black";
+        }
+
+        changeWhite() {
+            this.element.style.color = "white";
+        }
+    }
 
 
-const changeB = new Border(contentBox.borderWidth, contentBox.borderStyle, contentBox.borderColor, contentBox.element);
+    const changeB = new Border(contentBox.borderWidth, contentBox.borderStyle, contentBox.borderColor, contentBox.element);
 
-const revertB = new Border(contentBoxRevert.borderWidth, contentBoxRevert.borderStyle, contentBoxRevert.borderColor, contentBox.element);
+    const revertB = new Border(contentBoxRevert.borderWidth, contentBoxRevert.borderStyle, contentBoxRevert.borderColor, contentBox.element);
 
-const changeW = new WidthHeight(contentBox.width, contentBox.height, contentBox.element);
+    const changeW = new WidthHeight(contentBox.width, contentBox.height, contentBox.element);
 
-const revertW = new WidthHeight(contentBoxRevert.width, contentBoxRevert.height, contentBox.element);
+    const revertW = new WidthHeight(contentBoxRevert.width, contentBoxRevert.height, contentBox.element);
 
-const changeO = new Opacity(contentText.opacity, contentText.element);
+    const changeO = new Opacity(contentText.opacity, contentText.element);
 
-const revertO = new Opacity(contentTextRevert.opacity, contentText.element);
+    const revertO = new Opacity(contentTextRevert.opacity, contentText.element);
 
-const logoWhiteHover = new Opacity(logo.opacity, logo.WhiteElement);
+    const logoWhiteHover = new Opacity(logo.opacity, logo.WhiteElement);
 
-const logoWhiteHoverRevert = new Opacity(logo.opacityRevert, logo.WhiteElement);
+    const logoWhiteHoverRevert = new Opacity(logo.opacityRevert, logo.WhiteElement);
 
-const logoBlackHover = new Opacity(logo.opacityRevert, logo.BlackElement);
+    const logoBlackHover = new Opacity(logo.opacityRevert, logo.BlackElement);
 
-const logoBlackHoverRevert = new Opacity(logo.opacity, logo.BlackElement);
+    const logoBlackHoverRevert = new Opacity(logo.opacity, logo.BlackElement);
 
 
-function resolveAfter0Seconds(x, y) {
-    return new Promise(resolve => {
-        setTimeout(() => {
-            resolve(x, y);
-        }, 0);
-    });
-}
+    function resolveAfter0Seconds(x, y) {
+        return new Promise(resolve => {
+            setTimeout(() => {
+                resolve(x, y);
+            }, 0);
+        });
+    }
 
-function resolveAfter200Seconds(x, y) {
-    return new Promise(resolve => {
-        setTimeout(() => {
-            resolve(x, y);
+    function resolveAfter200Seconds(x, y) {
+        return new Promise(resolve => {
+            setTimeout(() => {
+                resolve(x, y);
 
-        }, 200);
-    });
-}
+            }, 200);
+        });
+    }
 
-function resolveAfter400Seconds(x, y) {
-    return new Promise(resolve => {
-        setTimeout(() => {
-            resolve(x, y);
+    function resolveAfter400Seconds(x, y) {
+        return new Promise(resolve => {
+            setTimeout(() => {
+                resolve(x, y);
 
-        }, 400);
-    });
-}
+            }, 400);
+        });
+    }
 
-function resolveAfter800Seconds(x, y) {
-    return new Promise(resolve => {
-        setTimeout(() => {
-            resolve(x, y);
+    function resolveAfter800Seconds(x, y) {
+        return new Promise(resolve => {
+            setTimeout(() => {
+                resolve(x, y);
 
-        }, 800);
-    });
-}
+            }, 800);
+        });
+    }
 
-function resolveAfter1600Seconds(x, y) {
-    return new Promise(resolve => {
-        setTimeout(() => {
-            resolve(x, y);
+    function resolveAfter1600Seconds(x, y) {
+        return new Promise(resolve => {
+            setTimeout(() => {
+                resolve(x, y);
 
-        }, 1600);
-    });
-}
+            }, 1600);
+        });
+    }
 
-function resolveAfter6500Seconds(x, y) {
-    return new Promise(resolve => {
-        setTimeout(() => {
-            resolve(x, y);
+    function resolveAfter6500Seconds(x, y) {
+        return new Promise(resolve => {
+            setTimeout(() => {
+                resolve(x, y);
 
-        }, 6500);
-    });
-}
+            }, 6500);
+        });
+    }
 
-function resolveAfter8000Seconds(x, y) {
-    return new Promise(resolve => {
-        setTimeout(() => {
-            resolve(x, y);
+    function resolveAfter8000Seconds(x, y) {
+        return new Promise(resolve => {
+            setTimeout(() => {
+                resolve(x, y);
 
-        }, 8000);
-    });
-}
+            }, 8000);
+        });
+    }
 
-function resolveAfter10000Seconds(x, y, z) {
-    return new Promise(resolve => {
-        setTimeout(() => {
-            resolve(x, y, z);
+    function resolveAfter10000Seconds(x, y, z) {
+        return new Promise(resolve => {
+            setTimeout(() => {
+                resolve(x, y, z);
 
-        }, 10000);
-    });
-}
+            }, 10000);
+        });
+    }
 
-function removeEvPr(){
-    window.location = "https://rakshitrajender.github.io/Mofa_16032021.github.io/1_Project/Project_index.html";
-}
-
-function removeEvPrac(){
-    window.location = "https://rakshitrajender.github.io/Mofa_16032021.github.io/2_Practice/Practice_index.html";
-}
-
-function removeEvTe(){
-    window.location = "https://rakshitrajender.github.io/Mofa_16032021.github.io/3_Team/Team_index.html";
-}
-
-function removeEvCon(){
-    window.location = "https://rakshitrajender.github.io/Mofa_16032021.github.io/5_Contact/Contact_index.html";
-}
-
-async function animateNav() {
-
-    contentText.project.addEventListener('click', () => {
+    function removeEvPr() {
         window.location = "https://rakshitrajender.github.io/Mofa_16032021.github.io/1_Project/Project_index.html";
-    })
-    
-    contentText.practice.addEventListener('click', (e) => {
+    }
+
+    function removeEvPrac() {
         window.location = "https://rakshitrajender.github.io/Mofa_16032021.github.io/2_Practice/Practice_index.html";
-       
-    })
-    
-    contentText.team.addEventListener('click', () => {
+    }
+
+    function removeEvTe() {
         window.location = "https://rakshitrajender.github.io/Mofa_16032021.github.io/3_Team/Team_index.html";
-    })
-    
-    // contentText.services.addEventListener('click', () => {
-    //     window.location = "D:/Web_Dev/Mofa_16032021/4_Services/Services_index.html";
-    // })
-    
-    contentText.contact.addEventListener('click', () => {
+    }
+
+    function removeEvCon() {
         window.location = "https://rakshitrajender.github.io/Mofa_16032021.github.io/5_Contact/Contact_index.html";
+    }
+
+    async function animateNav() {
+
+        contentText.project.addEventListener('click', () => {
+            window.location = "https://rakshitrajender.github.io/Mofa_16032021.github.io/1_Project/Project_index.html";
+        })
+
+        contentText.practice.addEventListener('click', (e) => {
+            window.location = "https://rakshitrajender.github.io/Mofa_16032021.github.io/2_Practice/Practice_index.html";
+
+        })
+
+        contentText.team.addEventListener('click', () => {
+            window.location = "https://rakshitrajender.github.io/Mofa_16032021.github.io/3_Team/Team_index.html";
+        })
+
+        // contentText.services.addEventListener('click', () => {
+        //     window.location = "D:/Web_Dev/Mofa_16032021/4_Services/Services_index.html";
+        // })
+
+        contentText.contact.addEventListener('click', () => {
+            window.location = "https://rakshitrajender.github.io/Mofa_16032021.github.io/5_Contact/Contact_index.html";
+        })
+
+
+        await resolveAfter0Seconds(contentBox.element.removeEventListener('click', animateNav));
+        await resolveAfter400Seconds(changeB.changeB(), changeW.changeHeight());
+        await resolveAfter10000Seconds(changeW.changeWidth(), changeO.changeOpacity());
+        await resolveAfter800Seconds(revertO.changeOpacity());
+        await resolveAfter400Seconds(revertW.changeWidth());
+        await resolveAfter400Seconds(revertB.changeB(), revertW.changeHeight());
+
+        await resolveAfter0Seconds(contentBox.element.addEventListener('click', animateNav));
+
+        await resolveAfter0Seconds(contentText.project.removeEventListener('click', removeEvPr), contentText.practice.removeEventListener('click', removeEvPrac))
+
+        await resolveAfter0Seconds(contentText.team.removeEventListener('click', removeEvTe), contentText.contact.removeEventListener('click', removeEvCon))
+
+
+    }
+
+    logo.WhiteElement.addEventListener('mouseenter', () => {
+        logoWhiteHover.changeOpacity();
+        logoBlackHover.changeOpacity();
+    })
+
+    logo.WhiteElement.addEventListener('mouseleave', () => {
+        logoWhiteHoverRevert.changeOpacity();
+        logoBlackHoverRevert.changeOpacity();
+    })
+
+    logo.WhiteElement.addEventListener('mousedown', (e) => {
+
+        const transformWhite = new Transform(0.985, 0.985, 0, logo.WhiteElement);
+        const transformBlack = new Transform(0.985, 0.985, 0, logo.BlackElement);
+
+        transformWhite.changeScale();
+        transformBlack.changeScale();
+
+    })
+
+    logo.WhiteElement.addEventListener('mouseup', async (e) => {
+
+        const transformWhite = new Transform(1, 1, 0, logo.WhiteElement);
+        const transformBlack = new Transform(1, 1, 0, logo.BlackElement);
+
+        await resolveAfter200Seconds(transformWhite.changeScale(),
+            transformBlack.changeScale());
+        await resolveAfter0Seconds(window.location = "https://rakshitrajender.github.io/Mofa_16032021.github.io/index.html");
+
     })
 
 
-    await resolveAfter0Seconds(contentBox.element.removeEventListener('click', animateNav));
-    await resolveAfter400Seconds(changeB.changeB(), changeW.changeHeight());
-    await resolveAfter10000Seconds(changeW.changeWidth(), changeO.changeOpacity());
-    await resolveAfter800Seconds(revertO.changeOpacity());
-    await resolveAfter400Seconds(revertW.changeWidth());
-    await resolveAfter400Seconds(revertB.changeB(), revertW.changeHeight());
 
-    await resolveAfter0Seconds(contentBox.element.addEventListener('click', animateNav));
-
-    await resolveAfter0Seconds(contentText.project.removeEventListener('click', removeEvPr ), contentText.practice.removeEventListener('click',removeEvPrac ))
-
-    await resolveAfter0Seconds(contentText.team.removeEventListener('click',removeEvTe ), contentText.contact.removeEventListener('click', removeEvCon))
-
-  
-}
-
-logo.WhiteElement.addEventListener('mouseenter', () => {
-    logoWhiteHover.changeOpacity();
-    logoBlackHover.changeOpacity();
-})
-
-logo.WhiteElement.addEventListener('mouseleave', () => {
-    logoWhiteHoverRevert.changeOpacity();
-    logoBlackHoverRevert.changeOpacity();
-})
-
-logo.WhiteElement.addEventListener('mousedown', (e) => {
-
-    const transformWhite = new Transform(0.985, 0.985, 0, logo.WhiteElement);
-    const transformBlack = new Transform(0.985, 0.985, 0, logo.BlackElement);
-
-    transformWhite.changeScale();
-    transformBlack.changeScale();
-
-})
-
-logo.WhiteElement.addEventListener('mouseup', async (e) => {
-
-    const transformWhite = new Transform(1, 1, 0, logo.WhiteElement);
-    const transformBlack = new Transform(1, 1, 0, logo.BlackElement);
-
-    await resolveAfter200Seconds(transformWhite.changeScale(),
-        transformBlack.changeScale());
-    await resolveAfter0Seconds(window.location = "https://rakshitrajender.github.io/Mofa_16032021.github.io/index.html");
-
-})
+    contentBox.element.addEventListener('click', animateNav)
 
 
-
-contentBox.element.addEventListener('click', animateNav)
-
-
-contentText.project.addEventListener('mouseenter', () => {
-    contentText.project.style.color = "grey"
-})
-
-contentText.practice.addEventListener('mouseenter', () => {
-    contentText.practice.style.color =  "grey"
-})
-
-contentText.team.addEventListener('mouseenter', () => {
-    contentText.team.style.color =  "grey"
-})
-
-// contentText.services.addEventListener('mouseenter', () => {
-//     contentText.services.style.color =  "grey"
-// })
-
-contentText.contact.addEventListener('mouseenter', () => {
-    contentText.contact.style.color =  "grey"
-})
-
-contentText.project.addEventListener('mouseleave', () => {
-    contentText.project.style.color = "black"
-})
-
-contentText.practice.addEventListener('mouseleave', () => {
-    contentText.practice.style.color = "black"
-})
-
-contentText.team.addEventListener('mouseleave', () => {
-    contentText.team.style.color = "black"
-})
-
-// contentText.services.addEventListener('mouseleave', () => {
-//     contentText.services.style.color = "black"
-// })
-
-contentText.contact.addEventListener('mouseleave', () => {
-    contentText.contact.style.color = "black"
-})
-
-function loopOpacityTeam(a){
-    document.querySelector(a).addEventListener('mouseenter', ()=>{
-        document.querySelector(a).style.opacity="0";
+    contentText.project.addEventListener('mouseenter', () => {
+        contentText.project.style.color = "grey"
     })
 
-    document.querySelector(a).addEventListener('mouseenter', ()=>{
-        document.querySelector(a).style.opacity="1";
+    contentText.practice.addEventListener('mouseenter', () => {
+        contentText.practice.style.color = "grey"
     })
 
-    loopOpacityTeam(a);
-}
+    contentText.team.addEventListener('mouseenter', () => {
+        contentText.team.style.color = "grey"
+    })
 
-loopOpacityTeam(".layerTop");
+    // contentText.services.addEventListener('mouseenter', () => {
+    //     contentText.services.style.color =  "grey"
+    // })
 
-loopOpacityTeam("#layerTop2a");
-loopOpacityTeam("#layerTop2b");
+    contentText.contact.addEventListener('mouseenter', () => {
+        contentText.contact.style.color = "grey"
+    })
 
-loopOpacityTeam("#layerTop3a");
-loopOpacityTeam("#layerTop3b");
-loopOpacityTeam("#layerTop3c");
-loopOpacityTeam("#layerTop3d");
-loopOpacityTeam("#layerTop3e");
+    contentText.project.addEventListener('mouseleave', () => {
+        contentText.project.style.color = "black"
+    })
 
-loopOpacityTeam("#layerTop4a");
-loopOpacityTeam("#layerTop4b");
-loopOpacityTeam("#layerTop4c");
-loopOpacityTeam("#layerTop4d");
-loopOpacityTeam("#layerTop4e");
+    contentText.practice.addEventListener('mouseleave', () => {
+        contentText.practice.style.color = "black"
+    })
 
-loopOpacityTeam("#layerTop5a");
-loopOpacityTeam("#layerTop5b");
-loopOpacityTeam("#layerTop5c");
-loopOpacityTeam("#layerTop5d");
-loopOpacityTeam("#layerTop5e");
+    contentText.team.addEventListener('mouseleave', () => {
+        contentText.team.style.color = "black"
+    })
 
+    // contentText.services.addEventListener('mouseleave', () => {
+    //     contentText.services.style.color = "black"
+    // })
+
+    contentText.contact.addEventListener('mouseleave', () => {
+        contentText.contact.style.color = "black"
+    })
+
+
+    document.querySelector(".layerTop").addEventListener('mouseenter', () => {
+        document.querySelector(".layerTop").style.opacity = "0";
+    })
+
+    document.querySelector(".layerTop").addEventListener('mouseleave', () => {
+        document.querySelector(".layerTop").style.opacity = "1";
+    })
+
+
+
+    document.querySelector("#layerTop2a").addEventListener('mouseenter', () => {
+        document.querySelector("#layerTop2a").style.opacity = "0";
+    })
+
+    document.querySelector("#layerTop2a").addEventListener('mouseleave', () => {
+        document.querySelector("#layerTop2a").style.opacity = "1";
+    })
+
+
+    document.querySelector("#layerTop2b").addEventListener('mouseenter', () => {
+        document.querySelector("#layerTop2b").style.opacity = "0";
+    })
+
+    document.querySelector("#layerTop2b").addEventListener('mouseleave', () => {
+        document.querySelector("#layerTop2b").style.opacity = "1";
+    })
+
+
+    document.querySelector("#layerTop3a").addEventListener('mouseenter', () => {
+        document.querySelector("#layerTop3a").style.opacity = "0";
+    })
+
+    document.querySelector("#layerTop3a").addEventListener('mouseleave', () => {
+        document.querySelector("#layerTop3a").style.opacity = "1";
+    })
+
+
+    document.querySelector("#layerTop3b").addEventListener('mouseenter', () => {
+        document.querySelector("#layerTop3b").style.opacity = "0";
+    })
+
+    document.querySelector("#layerTop3b").addEventListener('mouseleave', () => {
+        document.querySelector("#layerTop3b").style.opacity = "1";
+    })
+
+
+    document.querySelector("#layerTop3c").addEventListener('mouseenter', () => {
+        document.querySelector("#layerTop3c").style.opacity = "0";
+    })
+
+    document.querySelector("#layerTop3c").addEventListener('mouseleave', () => {
+        document.querySelector("#layerTop3c").style.opacity = "1";
+    })
+
+
+    document.querySelector("#layerTop3d").addEventListener('mouseenter', () => {
+        document.querySelector("#layerTop3d").style.opacity = "0";
+    })
+
+    document.querySelector("#layerTop3d").addEventListener('mouseleave', () => {
+        document.querySelector("#layerTop3d").style.opacity = "1";
+    })
+
+
+    document.querySelector("#layerTop3e").addEventListener('mouseenter', () => {
+        document.querySelector("#layerTop3e").style.opacity = "0";
+    })
+
+    document.querySelector("#layerTop3e").addEventListener('mouseleave', () => {
+        document.querySelector("#layerTop3e").style.opacity = "1";
+    })
+
+
+
+    document.querySelector("#layerTop4a").addEventListener('mouseenter', () => {
+        document.querySelector("#layerTop4a").style.opacity = "0";
+    })
+
+    document.querySelector("#layerTop4a").addEventListener('mouseleave', () => {
+        document.querySelector("#layerTop4a").style.opacity = "1";
+    })
+
+
+    document.querySelector("#layerTop4b").addEventListener('mouseenter', () => {
+        document.querySelector("#layerTop4b").style.opacity = "0";
+    })
+
+    document.querySelector("#layerTop4b").addEventListener('mouseleave', () => {
+        document.querySelector("#layerTop4b").style.opacity = "1";
+    })
+
+
+    document.querySelector("#layerTop4c").addEventListener('mouseenter', () => {
+        document.querySelector("#layerTop4c").style.opacity = "0";
+    })
+
+    document.querySelector("#layerTop4c").addEventListener('mouseleave', () => {
+        document.querySelector("#layerTop4c").style.opacity = "1";
+    })
+
+
+    document.querySelector("#layerTop4d").addEventListener('mouseenter', () => {
+        document.querySelector("#layerTop4d").style.opacity = "0";
+    })
+
+    document.querySelector("#layerTop4d").addEventListener('mouseleave', () => {
+        document.querySelector("#layerTop4d").style.opacity = "1";
+    })
+
+
+    document.querySelector("#layerTop4e").addEventListener('mouseenter', () => {
+        document.querySelector("#layerTop4e").style.opacity = "0";
+    })
+
+    document.querySelector("#layerTop4e").addEventListener('mouseleave', () => {
+        document.querySelector("#layerTop4e").style.opacity = "1";
+    })
+
+
+
+
+    document.querySelector("#layerTop5a").addEventListener('mouseenter', () => {
+        document.querySelector("#layerTop5a").style.opacity = "0";
+    })
+
+    document.querySelector("#layerTop5a").addEventListener('mouseleave', () => {
+        document.querySelector("#layerTop5a").style.opacity = "1";
+    })
+
+
+    document.querySelector("#layerTop5b").addEventListener('mouseenter', () => {
+        document.querySelector("#layerTop5b").style.opacity = "0";
+    })
+
+    document.querySelector("#layerTop5b").addEventListener('mouseleave', () => {
+        document.querySelector("#layerTop5b").style.opacity = "1";
+    })
+
+
+    document.querySelector("#layerTop5c").addEventListener('mouseenter', () => {
+        document.querySelector("#layerTop5c").style.opacity = "0";
+    })
+
+    document.querySelector("#layerTop5c").addEventListener('mouseleave', () => {
+        document.querySelector("#layerTop5c").style.opacity = "1";
+    })
+
+
+    document.querySelector("#layerTop5d").addEventListener('mouseenter', () => {
+        document.querySelector("#layerTop5d").style.opacity = "0";
+    })
+
+    document.querySelector("#layerTop5d").addEventListener('mouseleave', () => {
+        document.querySelector("#layerTop5d").style.opacity = "1";
+    })
+
+
+    document.querySelector("#layerTop5e").addEventListener('mouseenter', () => {
+        document.querySelector("#layerTop5e").style.opacity = "0";
+    })
+
+    document.querySelector("#layerTop5e").addEventListener('mouseleave', () => {
+        document.querySelector("#layerTop5e").style.opacity = "1";
+    })
+    
 
 })
