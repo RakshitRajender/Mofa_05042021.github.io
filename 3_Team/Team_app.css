@@ -48,13 +48,13 @@ body {
     position: absolute;
     z-index: 99;
     width: 100vw;
-    height: 100vh;
+    height: 150vh;
 }
 
 .loadingBg {
     position: absolute;
     width: 100vw;
-    height: 100vh;
+    height: 150vh;
     background-color: rgb(32, 32, 32);
 }
 
