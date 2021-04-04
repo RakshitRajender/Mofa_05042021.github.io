@@ -355,6 +355,10 @@ main {
     background-color: rgb(240 248 255 / 54%);
 }
 
+#layerTop2b{
+     transform: translate(0%,-212%);
+}
+
 .Four{
     height:150%;
     transform:translate(-15%,0%);
@@ -368,29 +372,53 @@ main {
     position:absolute;
     z-index:80;
     transform:translate(0,-152%);
-    width: 9%;
+    width: 18%;
     height: 30%;
     background-color: rgb(240 248 255 / 54%);
 }
 
+#layerTop3b{
+    transform:translate(0,-212%);
+}
+
+#layerTop3d{
+    transform:translate(0,-212%);
+}
+
+
 .layerTop4{
     position:absolute;
     z-index:80;
-    transform:translate(0,-152%);
-    width: 9%;
+    transform:translate(0,-212%);
+    width: 18%;
     height: 30%;
     background-color: rgb(240 248 255 / 54%);
+}
+
+#layerTop4b{
+    transform:translate(0,-152%);
+}
+
+#layerTop4d{
+    transform:translate(0,-152%);
 }
 
 .layerTop5{
     position:absolute;
     z-index:80;
     transform:translate(0,-152%);
-    width: 9%;
+    width: 18%;
     height: 30%;
     background-color: rgb(240 248 255 / 54%);
 }
 
+#layerTop5b{
+    transform:translate(0,-212%);
+}
+
+#layerTop5d{
+    transform:translate(0,-212%);
+}
 
 footer{
     color: rgb(240, 240, 240);
