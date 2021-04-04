@@ -244,9 +244,10 @@
             }))
 
 
-            await resolveAfter0Seconds($(".loading").fadeOut(1500));
-            await resolveAfter0Seconds(document.querySelector("html").style.overflowY = "scroll");
+            await resolveAfter0Seconds(window.addEventListener('load', ()=>{(".loading").fadeOut(1500)
+            document.querySelector("html").style.overflowY = "scroll"}));
         }
+        
         intro();
 
     </script>
