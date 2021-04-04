@@ -266,7 +266,23 @@ function resolveAfter10000Seconds(x, y, z) {
 }
 
 
-async function animateNav(e) {
+function removeEvPr(){
+    window.location = `https://rakshitrajender.github.io/Mofa_16032021.github.io/1_Project/Project_index.html`;
+}
+
+function removeEvPrac(){
+    window.location = `https://rakshitrajender.github.io/Mofa_16032021.github.io/2_Practice/Practice_index.html`;
+}
+
+function removeEvTe(){
+    window.location = `https://rakshitrajender.github.io/Mofa_16032021.github.io/3_Team/Team_index.html`;
+}
+
+function removeEvCon(){
+    window.location = `https://rakshitrajender.github.io/Mofa_16032021.github.io/5_Contact/Contact_index.html`;
+}
+
+async function animateNav() {
 
     contentText.project.addEventListener('click', () => {
         window.location = "https://rakshitrajender.github.io/Mofa_16032021.github.io/1_Project/Project_index.html";
@@ -299,18 +315,9 @@ async function animateNav(e) {
 
     await resolveAfter0Seconds(contentBox.element.addEventListener('click', animateNav));
 
-    await resolveAfter0Seconds(contentText.project.removeEventListener('click', () => {
-        window.location = "https://rakshitrajender.github.io/Mofa_16032021.github.io/1_Project/Project_index.html";
-    }), contentText.practice.removeEventListener('click', (e) => {
-        window.location ="https://rakshitrajender.github.io/Mofa_16032021.github.io/2_Practice/Practice_index.html";
-        
-    }))
+    await resolveAfter0Seconds(contentText.project.removeEventListener('click', removeEvPr ), contentText.practice.removeEventListener('click',removeEvPrac ))
 
-    await resolveAfter0Seconds(contentText.team.removeEventListener('click', () => {
-        window.location =  "https://rakshitrajender.github.io/Mofa_16032021.github.io/3_Team/Team_index.html";
-    }), contentText.contact.removeEventListener('click', () => {
-        window.location = "https://rakshitrajender.github.io/Mofa_16032021.github.io/5_Contact/Contact_index.html";
-    }))
+    await resolveAfter0Seconds(contentText.team.removeEventListener('click',removeEvTe ), contentText.contact.removeEventListener('click', removeEvCon))
 
   
 }
