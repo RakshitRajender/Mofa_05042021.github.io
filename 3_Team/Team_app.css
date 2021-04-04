@@ -170,7 +170,7 @@ main {
 
 .teamTable {
     width: 80%;
-    height: 80%;
+    /* height: 80%; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -196,6 +196,8 @@ main {
     width: 100%;
     height: 35vh;
 }
+
+
 
 .Bhanu {
     background-color: rgb(176, 127, 255);
