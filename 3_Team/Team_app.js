@@ -322,6 +322,14 @@ window.addEventListener('load', (e) => {
 
     contentBox.element.addEventListener('click', animateNav)
 
+    contentBox.element.addEventListener('mouseenter', ()=>{
+        contentBox.element.style.transform="scale(0.7)";
+    })
+    
+    contentBox.element.addEventListener('mouseleave', ()=>{
+        contentBox.element.style.transform="scale(1)";
+    })
+
 
     contentText.project.addEventListener('mouseenter', () => {
         contentText.project.style.color = "grey"

@@ -310,8 +310,8 @@ async function animateNav() {
 
     await resolveAfter0Seconds(contentText.team.removeEventListener('click',removeEvTe ), contentText.contact.removeEventListener('click', removeEvCon))
 
-  
 }
+
 
 logo.WhiteElement.addEventListener('mouseenter', () => {
     logoWhiteHover.changeOpacity();
@@ -347,6 +347,15 @@ logo.WhiteElement.addEventListener('mouseup', async (e) => {
 
 
 contentBox.element.addEventListener('click', animateNav)
+
+contentBox.element.addEventListener('mouseenter', ()=>{
+    contentBox.element.style.transform="scale(0.7)";
+})
+
+contentBox.element.addEventListener('mouseleave', ()=>{
+    contentBox.element.style.transform="scale(1)";
+})
+
 
 
 contentText.project.addEventListener('mouseenter', () => {
