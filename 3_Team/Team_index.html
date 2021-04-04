@@ -224,7 +224,7 @@
                 duration: 1500,
                 delay: 100,
                 direction: 'alternate',
-                loop: 3
+                loop: true
                 // ,
                 // loopComplete: function (anim) {
                 //     loopCompleted++;
@@ -247,7 +247,7 @@
             await resolveAfter0Seconds(window.addEventListener('load', ()=>{(".loading").fadeOut(1500)
             document.querySelector("html").style.overflowY = "scroll"}));
         }
-        
+
         intro();
 
     </script>
