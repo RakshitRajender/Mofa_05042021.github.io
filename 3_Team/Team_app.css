@@ -327,9 +327,9 @@ main {
 }
 
 .Two {
-     height:120%;
-   transform:translate(0%,-0%);
-}
+    height:800%;
+    transform:translate(-15%,-60%);
+ }
 
 .Three {
      height:210%;
