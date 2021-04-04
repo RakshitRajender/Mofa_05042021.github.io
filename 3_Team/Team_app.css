@@ -145,6 +145,7 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top:8%;
 }
 
 .content {
@@ -169,13 +170,13 @@ main {
 }
 
 .teamTable {
-    width: 80%;
+    width: 90%;
     height: 80%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    
+    margin-top:10vh;
 }
 
 .row1, .row2, .row3, .row4, .row5 {
@@ -320,7 +321,7 @@ main {
 }
 
 .One {
-    height:400%;
+    height:450%;
    transform:translate(-23%,-45%);
     
 }
@@ -331,8 +332,8 @@ main {
 }
 
 .Three {
-     height:190%;
-   transform:translate(-45%,-15%);
+     height:2100%;
+   transform:translate(-5%,-15%);
 }
 
 .Four{
