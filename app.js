@@ -349,7 +349,7 @@ logo.WhiteElement.addEventListener('mouseup', async (e) => {
 contentBox.element.addEventListener('click', animateNav)
 
 contentBox.element.addEventListener('mouseenter', ()=>{
-    contentBox.element.style.transform="scale(0.7) rotate(-180deg)";
+    contentBox.element.style.transform="scale(0.9) rotate(-180deg)";
 })
 
 contentBox.element.addEventListener('mouseleave', ()=>{
