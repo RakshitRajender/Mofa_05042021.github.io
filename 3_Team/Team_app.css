@@ -318,26 +318,26 @@ main {
 }
 
 .One {
-    width:200vw;
+    width:200%;
    transform:translate(-23%,-45%);
     
 }
 
 .Two {
-      width:65vw;
+      width:65%;
    transform:translate(-20%,-0%);
 }
 
 .Three {
-     width:60vh;
+     width:60%;
    transform:translate(-20%,-40%);
 }
 
 .Four{
-    width:60vh;
+    width:60%;
     transform:translate(-20%,-40%);
 }
 .Five{
-    width:60vh;
+    width:60%;
     transform:translate(-20%,-40%);
 }
