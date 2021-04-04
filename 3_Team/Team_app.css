@@ -334,6 +334,8 @@ main {
     width: 90%;
     height: 35%;
     background-color: rgb(240 248 255 / 54%);
+    transition: all 1.3s cubic-bezier(0.45, 0, 0.55, 1);
+    cursor: pointer;
 }
 
 .Two {
@@ -353,6 +355,8 @@ main {
     width: 45%;
     height: 33%;
     background-color: rgb(240 248 255 / 54%);
+    transition: all 1.3s cubic-bezier(0.45, 0, 0.55, 1);
+    cursor: pointer;
 }
 
 #layerTop2b{
@@ -375,6 +379,8 @@ main {
     width: 18%;
     height: 30%;
     background-color: rgb(240 248 255 / 54%);
+    transition: all 1.3s cubic-bezier(0.45, 0, 0.55, 1);
+    cursor: pointer;
 }
 
 #layerTop3b{
@@ -393,6 +399,8 @@ main {
     width: 18%;
     height: 30%;
     background-color: rgb(240 248 255 / 54%);
+    transition: all 1.3s cubic-bezier(0.45, 0, 0.55, 1);
+    cursor: pointer;
 }
 
 #layerTop4b{
@@ -410,6 +418,8 @@ main {
     width: 18%;
     height: 30%;
     background-color: rgb(240 248 255 / 54%);
+    transition: all 1.3s cubic-bezier(0.45, 0, 0.55, 1);
+    cursor: pointer;
 }
 
 #layerTop5b{
