@@ -249,28 +249,19 @@ window.addEventListener('load', (e) => {
 
     async function animateNav() {
 
-        contentText.project.addEventListener('click', () => {
-            window.location = "https://rakshitrajender.github.io/Mofa_16032021.github.io/1_Project/Project_index.html";
-        })
+        contentText.project.addEventListener('click', removeEvPr)
 
-        contentText.practice.addEventListener('click', (e) => {
-            window.location = "https://rakshitrajender.github.io/Mofa_16032021.github.io/2_Practice/Practice_index.html";
+        contentText.practice.addEventListener('click', removeEvPrac)
 
-        })
-
-        contentText.team.addEventListener('click', () => {
-            window.location = "https://rakshitrajender.github.io/Mofa_16032021.github.io/3_Team/Team_index.html";
-        })
+        contentText.team.addEventListener('click', removeEvTe)
 
         // contentText.services.addEventListener('click', () => {
         //     window.location = "D:/Web_Dev/Mofa_16032021/4_Services/Services_index.html";
         // })
 
-        contentText.contact.addEventListener('click', () => {
-            window.location = "https://rakshitrajender.github.io/Mofa_16032021.github.io/5_Contact/Contact_index.html";
-        })
+        contentText.contact.addEventListener('click', removeEvCon)
 
-
+        await resolveAfter0Seconds(contentBox.element.removeEventListener('mouseenter', mouseEntercontent))
         await resolveAfter0Seconds(contentBox.element.removeEventListener('click', animateNav));
         await resolveAfter400Seconds(changeB.changeB(), changeW.changeHeight());
         await resolveAfter10000Seconds(changeW.changeWidth(), changeO.changeOpacity());
@@ -279,11 +270,10 @@ window.addEventListener('load', (e) => {
         await resolveAfter400Seconds(revertB.changeB(), revertW.changeHeight());
 
         await resolveAfter0Seconds(contentBox.element.addEventListener('click', animateNav));
-
+        await resolveAfter0Seconds(contentBox.element.addEventListener('mouseenter', mouseEntercontent));
         await resolveAfter0Seconds(contentText.project.removeEventListener('click', removeEvPr), contentText.practice.removeEventListener('click', removeEvPrac))
 
         await resolveAfter0Seconds(contentText.team.removeEventListener('click', removeEvTe), contentText.contact.removeEventListener('click', removeEvCon))
-
 
     }
 
@@ -322,9 +312,11 @@ window.addEventListener('load', (e) => {
 
     contentBox.element.addEventListener('click', animateNav)
 
-    contentBox.element.addEventListener('mouseenter', ()=>{
-        contentBox.element.style.transform="scale(0.9) rotate(-180deg)";
-    })
+    function mouseEntercontent() {
+        contentBox.element.style.transform = "scale(0.9) rotate(-180deg)";
+    }
+
+    contentBox.element.addEventListener('mouseenter', mouseEntercontent);
     
     contentBox.element.addEventListener('mouseleave', ()=>{
         contentBox.element.style.transform="scale(1) rotate(-180deg)";
