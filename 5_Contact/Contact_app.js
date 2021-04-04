@@ -234,16 +234,51 @@ function resolveAfter10000Seconds(x, y, z) {
 
 async function animateNav(e) {
 
+    contentText.project.addEventListener('click', () => {
+        window.location = "https://rakshitrajender.github.io/Mofa_16032021.github.io/1_Project/Project_index.html";
+    })
+    
+    contentText.practice.addEventListener('click', (e) => {
+        window.location = "https://rakshitrajender.github.io/Mofa_16032021.github.io/2_Practice/Practice_index.html";
+       
+    })
+    
+    contentText.team.addEventListener('click', () => {
+        window.location = "https://rakshitrajender.github.io/Mofa_16032021.github.io/3_Team/Team_index.html";
+    })
+    
+    // contentText.services.addEventListener('click', () => {
+    //     window.location = "D:/Web_Dev/Mofa_16032021/4_Services/Services_index.html";
+    // })
+    
+    contentText.contact.addEventListener('click', () => {
+        window.location = "https://rakshitrajender.github.io/Mofa_16032021.github.io/5_Contact/Contact_index.html";
+    })
+
+
     await resolveAfter0Seconds(contentBox.element.removeEventListener('click', animateNav));
     await resolveAfter400Seconds(changeB.changeB(), changeW.changeHeight());
-    await resolveAfter6500Seconds(changeW.changeWidth(), changeO.changeOpacity());
+    await resolveAfter10000Seconds(changeW.changeWidth(), changeO.changeOpacity());
     await resolveAfter800Seconds(revertO.changeOpacity());
     await resolveAfter400Seconds(revertW.changeWidth());
     await resolveAfter400Seconds(revertB.changeB(), revertW.changeHeight());
+
     await resolveAfter0Seconds(contentBox.element.addEventListener('click', animateNav));
-    console.log(e.type);
-    // e.preventDefault();
-    // e.stopPropagation();
+
+    await resolveAfter0Seconds(contentText.project.removeEventListener('click', () => {
+        window.location = "https://rakshitrajender.github.io/Mofa_16032021.github.io/1_Project/Project_index.html";
+    }), contentText.practice.removeEventListener('click', (e) => {
+        window.location ="https://rakshitrajender.github.io/Mofa_16032021.github.io/2_Practice/Practice_index.html";
+        
+    }))
+
+    await resolveAfter0Seconds(contentText.team.removeEventListener('click', () => {
+        window.location =  "https://rakshitrajender.github.io/Mofa_16032021.github.io/3_Team/Team_index.html";
+    }), contentText.contact.removeEventListener('click', () => {
+        window.location = "https://rakshitrajender.github.io/Mofa_16032021.github.io/5_Contact/Contact_index.html";
+    }))
+
+  
 }
  
 logo.WhiteElement.addEventListener('mouseenter', () => {
@@ -320,29 +355,6 @@ contentText.team.addEventListener('mouseleave', () => {
 
 contentText.contact.addEventListener('mouseleave', () => {
     contentText.contact.style.color = "black"
-})
-
-
-
-contentText.project.addEventListener('click', () => {
-    window.location = "https://rakshitrajender.github.io/Mofa_16032021.github.io/1_Project/Project_index.html";
-})
-
-contentText.practice.addEventListener('click', (e) => {
-    window.location = "https://rakshitrajender.github.io/Mofa_16032021.github.io/2_Practice/Practice_index.html";
-    console.log(e);
-})
-
-contentText.team.addEventListener('click', () => {
-    window.location ="https://rakshitrajender.github.io/Mofa_16032021.github.io/3_Team/Team_index.html";
-})
-
-// contentText.services.addEventListener('click', () => {
-//     window.location = "D:/Web_Dev/Mofa_16032021/4_Services/Services_index.html";
-// })
-
-contentText.contact.addEventListener('click', () => {
-    window.location = "https://rakshitrajender.github.io/Mofa_16032021.github.io/5_Contact/Contact_index.html";
 })
 
 
