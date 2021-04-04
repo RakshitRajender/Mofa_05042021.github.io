@@ -153,24 +153,24 @@
             });
         }
 
-        function resolveAfter2500Seconds(x, y) {
+        function resolveAfter3500Seconds(x, y) {
             return new Promise(resolve => {
                 setTimeout(() => {
                     resolve(x, y);
-                }, 2500);
+                }, 3500);
             });
         }
 
         async function intro() {
 
-            await resolveAfter2500Seconds(anime({
+            await resolveAfter3500Seconds(anime({
                 targets: logoPath,
                 strokeDashoffset: [anime.setDashoffset, 0],
                 easing: 'easeInOutSine',
                 duration: 1500,
                 delay: 100,
                 direction: 'alternate',
-                loop: 2
+                loop: 3
                 // ,
                 // loopComplete: function (anim) {
                 //     loopCompleted++;
