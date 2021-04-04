@@ -363,4 +363,40 @@ contentText.contact.addEventListener('mouseleave', () => {
     contentText.contact.style.color = "black"
 })
 
+function loopOpacityTeam(a){
+    document.querySelector(a).addEventListener('mouseenter', ()=>{
+        document.querySelector(a).style.opacity="0";
+    })
+
+    document.querySelector(a).addEventListener('mouseenter', ()=>{
+        document.querySelector(a).style.opacity="1";
+    })
+
+    loopOpacityTeam(a);
+}
+
+loopOpacityTeam(".layerTop");
+
+loopOpacityTeam("#layerTop2a");
+loopOpacityTeam("#layerTop2b");
+
+loopOpacityTeam("#layerTop3a");
+loopOpacityTeam("#layerTop3b");
+loopOpacityTeam("#layerTop3c");
+loopOpacityTeam("#layerTop3d");
+loopOpacityTeam("#layerTop3e");
+
+loopOpacityTeam("#layerTop4a");
+loopOpacityTeam("#layerTop4b");
+loopOpacityTeam("#layerTop4c");
+loopOpacityTeam("#layerTop4d");
+loopOpacityTeam("#layerTop4e");
+
+loopOpacityTeam("#layerTop5a");
+loopOpacityTeam("#layerTop5b");
+loopOpacityTeam("#layerTop5c");
+loopOpacityTeam("#layerTop5d");
+loopOpacityTeam("#layerTop5e");
+
+
 })
