@@ -332,11 +332,15 @@ main {
     transform:translate(-15%,-60%);
  }
 
-.layerTop{
-    width: inherit;
-    height: inherit;
-    background-color: rgba(240, 248, 255, 0.178);
+ .layerTop{
+    position:absolute;
+    z-index:80;
+    transform:translate(0,-855%);
+    width: 90%;
+    height: 35%;
+    background-color: rgb(240 248 255 / 54%);
 }
+
 
 .Three {
      height:210%;
