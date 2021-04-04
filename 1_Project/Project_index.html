@@ -232,24 +232,24 @@
             });
         }
 
-        function resolveAfter1000Seconds(x, y) {
+        function resolveAfter4000Seconds(x, y) {
             return new Promise(resolve => {
                 setTimeout(() => {
                     resolve(x, y);
-                }, 1000);
+                }, 4000);
             });
         }
 
         async function intro() {
 
-            await resolveAfter1000Seconds(anime({
+            await resolveAfter0Seconds(anime({
                 targets: logoPath,
                 strokeDashoffset: [anime.setDashoffset, 0],
                 easing: 'easeInOutSine',
                 duration: 1500,
                 delay: 100,
                 direction: 'alternate',
-                loop: 2
+                loop: true
                 // ,
                 // loopComplete: function (anim) {
                 //     loopCompleted++;
@@ -269,9 +269,10 @@
             }))
 
 
-            await resolveAfter0Seconds($(".loading").fadeOut(1500));
-
+            await resolveAfter0Seconds($(window).on('load', function () { $(".loading").fadeOut(1500);
+            document.querySelector("html").style.overflowY = "scroll";}));
         }
+        
         intro();
 
     </script>
