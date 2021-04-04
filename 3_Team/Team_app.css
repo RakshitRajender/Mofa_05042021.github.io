@@ -44,22 +44,21 @@ body {
     /* position: fixed; */
 }
 
-.loading{
+.loading {
     position: absolute;
     z-index: 99;
     width: 100vw;
-    height:100vh;
+    height: 100vh;
 }
 
-.loadingBg{
+.loadingBg {
     position: absolute;
-    
     width: 100vw;
-    height:100vh;
+    height: 100vh;
     background-color: rgb(32, 32, 32);
 }
 
-.loadingLogo{
+.loadingLogo {
     /* position: absolute; */
     width: 100vw;
     height: 100vh;
@@ -68,10 +67,9 @@ body {
     align-items: center;
 }
 
-.logoGrad{
+.logoGrad {
     position: absolute;
     width: 15vw;
-   
 }
 
 nav {
@@ -166,7 +164,6 @@ main {
     width: 100vw;
     height: 100vh;
     display: flex;
-    
     justify-content: center;
     align-items: center;
 }
@@ -174,38 +171,37 @@ main {
 .teamTable {
     width: 80%;
     height: 80%;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.row1, .row2, .row3, .row4, .row5{
+.row1, .row2, .row3, .row4, .row5 {
     width: 100%;
     height: 35vh;
     background: linear-gradient(rgba(255, 255, 255, 0.212), rgba(255, 255, 255, 0.151)), url("D:/Web_Dev/Mofa_16032021/3_Team/Faisal_Image.jpg");
 }
 
-.row2,.row3,.row4,.row5{
-    
+.row2, .row3, .row4, .row5 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.Faisal{
+.Faisal {
     background-color: rgb(73, 50, 110);
     width: 100%;
     height: 35vh;
 }
 
-.Bhanu{
+.Bhanu {
     background-color: rgb(176, 127, 255);
     width: 100%;
     height: 35vh;
 }
 
-.Placeholder3{
+.Placeholder3 {
     background-color: rgb(55, 16, 119);
     width: 100%;
     height: 35vh;
