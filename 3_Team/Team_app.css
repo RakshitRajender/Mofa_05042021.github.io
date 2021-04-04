@@ -175,6 +175,7 @@ main {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    
 }
 
 .row1, .row2, .row3, .row4, .row5 {
@@ -183,6 +184,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 /* .row2, .row3, .row4, .row5 {
@@ -318,26 +320,39 @@ main {
 }
 
 .One {
-    width:200%;
+    height:400%;
    transform:translate(-23%,-45%);
     
 }
 
 .Two {
-      width:65%;
-   transform:translate(-20%,-0%);
+     height:120%;
+   transform:translate(0%,-0%);
 }
 
 .Three {
-     width:60%;
-   transform:translate(-20%,-40%);
+     height:190%;
+   transform:translate(-45%,-15%);
 }
 
 .Four{
-    width:60%;
-    transform:translate(-20%,-40%);
+    height:150%;
+    transform:translate(-15%,0%);
 }
 .Five{
-    width:60%;
-    transform:translate(-20%,-40%);
+    height:190%;
+    transform:translate(-18%,-15%);
+}
+
+footer{
+    color: rgb(240, 240, 240);
+    height: 5vh;
+    width: 95vw;
+    margin-top: 2vh;
+    border-top: 0.1mm solid rgb(238, 238, 238) ;
+    margin-left: 0.7%;
+    margin-right: 1.2%;
+    display: flex;
+    align-items: center;
+    font-size: 1.2vh;
 }
