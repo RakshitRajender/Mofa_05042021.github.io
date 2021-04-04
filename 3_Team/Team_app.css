@@ -327,24 +327,32 @@ main {
     
 }
 
-.Two {
-    height:800%;
-    transform:translate(-15%,-60%);
- }
-
- .layerTop{
+.layerTop{
     position:absolute;
     z-index:80;
-    transform:translate(0,-855%);
+    transform:translate(0,-452%);
     width: 90%;
     height: 35%;
     background-color: rgb(240 248 255 / 54%);
 }
 
+.Two {
+    height:800%;
+    transform:translate(-15%,-60%);
+ }
 
 .Three {
      height:210%;
    transform:translate(-5%,-15%);
+}
+
+.layerTop2{
+    position:absolute;
+    z-index:80;
+    transform:translate(0,-452%);
+    width: 90%;
+    height: 33%;
+    background-color: rgb(240 248 255 / 54%);
 }
 
 .Four{
@@ -355,6 +363,16 @@ main {
     height:210%;
     transform:translate(-18%,-15%);
 }
+
+.layerTop2{
+    position:absolute;
+    z-index:80;
+    transform:translate(0,-452%);
+    width: 90%;
+    height: 30%;
+    background-color: rgb(240 248 255 / 54%);
+}
+
 
 footer{
     color: rgb(240, 240, 240);
