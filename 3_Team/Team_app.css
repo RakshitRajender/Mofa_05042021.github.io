@@ -179,7 +179,7 @@ main {
 
 .row1, .row2, .row3, .row4, .row5 {
     width: 100%;
-/*     height: 35vh; */
+    /*     height: 35vh; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -194,7 +194,7 @@ main {
 .Faisal {
     background-color: rgb(73, 50, 110);
     width: 100%;
-    height:35vh;
+    height: 35vh;
 }
 
 .Bhanu {
@@ -209,85 +209,104 @@ main {
     height: 30vh;
 }
 
-
-
-.Placeholder4{
+.Placeholder4 {
     background-color: rgb(255, 2, 2);
     width: 100%;
     height: 30vh;
 }
-.Placeholder5{
+
+.Placeholder5 {
     background-color: rgb(172, 0, 0);
     width: 100%;
-    height: 30vh;  
+    height: 30vh;
 }
-.Placeholder6{
+
+.Placeholder6 {
     background-color: rgb(112, 0, 0);
     width: 100%;
     height: 30vh;
 }
-.Placeholder7{
+
+.Placeholder7 {
     background-color: rgb(58, 0, 0);
     width: 100%;
     height: 30vh;
 }
-.Placeholder8{
+
+.Placeholder8 {
     background-color: rgb(58, 20, 20);
     width: 100%;
     height: 30vh;
 }
 
-
-.Placeholder9{
+.Placeholder9 {
     background-color: rgb(188, 255, 2);
     width: 100%;
     height: 30vh;
 }
-.Placeholder10{
+
+.Placeholder10 {
     background-color: rgb(160, 206, 36);
     width: 100%;
     height: 30vh;
 }
-.Placeholder11{
+
+.Placeholder11 {
     background-color: rgb(131, 153, 70);
     width: 100%;
     height: 30vh;
 }
-.Placeholder12{
+
+.Placeholder12 {
     background-color: rgb(87, 97, 58);
     width: 100%;
     height: 30vh;
 }
-.Placeholder13{
+
+.Placeholder13 {
     background-color: rgb(60, 63, 53);
     width: 100%;
     height: 30vh;
 }
 
-
-.Placeholder14{
+.Placeholder14 {
     background-color: rgb(2, 255, 221);
     width: 100%;
     height: 30vh;
 }
-.Placeholder15{
+
+.Placeholder15 {
     background-color: rgb(44, 206, 184);
     width: 100%;
     height: 30vh;
 }
-.Placeholder16{
+
+.Placeholder16 {
     background-color: rgb(68, 143, 133);
     width: 100%;
     height: 30vh;
 }
-.Placeholder17{
+
+.Placeholder17 {
     background-color: rgb(70, 94, 90);
     width: 100%;
     height: 30vh;
 }
-.Placeholder18{
+
+.Placeholder18 {
     background-color: rgb(46, 51, 50);
     width: 100%;
     height: 30vh;
 }
 
+.One {
+    width: 2vw;
+}
+
+.Two {
+    width: 2vw;
+}
+
+.Three {
+    width: 2vw;
+}
