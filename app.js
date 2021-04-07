@@ -1,7 +1,7 @@
 
 window.addEventListener('load', (e) => {
 
-    console.log(e);
+    
 
     const contentBox = {
         element: document.querySelector(".content"),
